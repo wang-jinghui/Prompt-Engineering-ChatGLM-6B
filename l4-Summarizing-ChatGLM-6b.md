@@ -20,18 +20,7 @@ tokenizer = AutoTokenizer.from_pretrained("./chatglm-6b", trust_remote_code=True
 model = AutoModel.from_pretrained("./chatglm-6b", trust_remote_code=True).half().quantize(8).to('cuda')
 ```
 
-    Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
-
-
-    CPU times: user 2 µs, sys: 1 µs, total: 3 µs
-    Wall time: 5.25 µs
-
-
-    Explicitly passing a `revision` is encouraged when loading a configuration with custom code to ensure no malicious code has been contributed in a newer revision.
-    Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
-
-
-
+   
     Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]
 
 
